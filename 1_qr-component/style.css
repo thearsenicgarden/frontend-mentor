@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border-radius: 1rem;
+}
+
+:root {
+	--light: white;
+	--mid-light: hsl(212, 45%, 89%);
+	--mid: hsl(220, 15%, 55%);
+	--dark: #1f3251;
+}
+
+@keyframes blurIn {
+	0% {
+		-webkit-filter: blur(100px);
+		filter: blur(100px);
+	}
+	100% {
+		-webkit-filter: blur(0px);
+		filter: blur(0px);
+	}
+}
+
+html {
+	font-family: "Outfit", "Verdana", serif;
+	background-color: var(--mid-light);
+	border-radius: 0px;
+}
+
+main {
+	animation: 0.5s 0s 1 blurIn;
+	min-width: 275px;
+	max-width: 15%;
+	height: fit-content;
+	background-color: var(--light);
+	padding: 1rem;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	box-shadow: 17px 5px 11px var(--mid-light);
+}
+
+h1 {
+	font-weight: 700;
+	color: var(--dark);
+	font-size: 22px;
+	margin: 0.75rem;
+}
+
+p {
+	font-weight: 400;
+	color: var(--mid);
+	font-size: 15px;
+	margin-bottom: 1.25rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	font-weight: 400;
+	color: var(--dark);
+	font-size: 13px;
+	font-style: italic;
+}
+
+a:hover,
+a:active {
+	color: var(--mid);
+}
